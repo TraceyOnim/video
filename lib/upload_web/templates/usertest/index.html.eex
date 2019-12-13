@@ -1,0 +1,17 @@
+<h1>List of users </h1>
+<table>
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Username</th>
+	</tr>
+	
+	<%= for users <- @userss do %>
+	<tr>
+		<td><%= users.id%></td>
+		<td><%= users.name%></td>
+		<td><%= users.username%></td>
+	</tr>
+	<% end %>
+	
+</table>
